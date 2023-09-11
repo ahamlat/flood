@@ -30,8 +30,8 @@ def generate_calls_eth_get_block_by_number(
         block_numbers = block_generators.generate_block_numbers(
             n=n_calls,
             random_seed=random_seed,
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             network=network,
         )
     return [
@@ -114,8 +114,8 @@ def generate_calls_eth_get_eth_balance(
         if n_calls is None:
             raise Exception('must floodify more parameters')
         block_numbers = block_generators.generate_block_numbers(
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             n=n_calls,
             random_seed=random_seed,
             network=network,
@@ -151,8 +151,8 @@ def generate_calls_eth_get_transaction_count(
         if n_calls is None:
             raise Exception('must floodify more parameters')
         block_numbers = block_generators.generate_block_numbers(
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             n=n_calls,
             random_seed=random_seed,
             network=network,
@@ -264,8 +264,8 @@ def generate_calls_eth_get_logs(
         if block_range_size is None:
             block_range_size = 100
         block_ranges = block_generators.generate_block_ranges(
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             n=n_calls,
             range_size=block_range_size,
             random_seed=random_seed,
@@ -304,8 +304,8 @@ def generate_calls_eth_get_code(
         if n_calls is None:
             raise Exception('must floodify more parameters')
         block_numbers = block_generators.generate_block_numbers(
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             n=n_calls,
             random_seed=random_seed,
             network=network,
@@ -341,8 +341,8 @@ def generate_calls_eth_get_storage_at(
         if n_calls is None:
             raise Exception('must floodify more parameters')
         block_numbers = block_generators.generate_block_numbers(
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             n=n_calls,
             random_seed=random_seed,
             network=network,
@@ -388,8 +388,8 @@ def generate_calls_eth_call(
         size=n_calls,
     )
     block_numbers = block_generators.generate_block_numbers(
-        start_block=1495450,
-        end_block=1495500,
+        start_block=0,
+        end_block=1508393,
         n=n_calls,
         random_seed=random_seed,
         network=network,
@@ -427,8 +427,8 @@ def generate_calls_trace_block(
         block_numbers = block_generators.generate_block_numbers(
             n=n_calls,
             random_seed=0,
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             network=network,
         )
     return [
@@ -477,8 +477,8 @@ def generate_calls_trace_replay_block_transactions(
         block_numbers = block_generators.generate_block_numbers(
             n=n_calls,
             random_seed=random_seed,
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             network=network,
         )
     return [
@@ -505,8 +505,8 @@ def generate_calls_trace_replay_block_transactions_state_diff(
         block_numbers = block_generators.generate_block_numbers(
             n=n_calls,
             random_seed=random_seed,
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             network=network,
         )
     return [
@@ -533,8 +533,8 @@ def generate_calls_trace_replay_block_transactions_vm_trace(
         block_numbers = block_generators.generate_block_numbers(
             n=n_calls,
             random_seed=random_seed,
-            start_block=1495450,
-            end_block=1495500,
+            start_block=0,
+            end_block=1508393,
             network=network,
         )
     return [
