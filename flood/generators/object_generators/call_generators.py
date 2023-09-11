@@ -79,8 +79,8 @@ def generate_calls_eth_fee_history(
         block_numbers = block_generators.generate_block_numbers(
             n=n_calls,
             random_seed=random_seed,
-            start_block=13_000_000,
-            end_block=17_000_000,
+            start_block=580000,
+            end_block=1508393,
             network=network,
         )
     if block_count is None:
