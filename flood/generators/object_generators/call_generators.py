@@ -650,8 +650,8 @@ def generate_calls_debug_trace_block_by_number(
         block_numbers = block_generators.generate_block_numbers(
             n=n_calls,
             random_seed=0,
-            start_block=18491000,
-            end_block=18491278,
+            start_block=21430020,
+            end_block=21430420,
             network=network,
         )
     return [
